@@ -1,0 +1,175 @@
+
+body{
+    background-image: url("bghd.jpg");
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.fh{
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+h1,h2,p{
+    font-family: cursive;
+}
+.about{
+    background-color: black;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+.abouth,.abtcont{
+    font-family: cursive;
+    color: whitesmoke;
+    text-align: center;
+    text-size-adjust: large;
+}
+.abtcont{
+    padding: 1.2em;
+}
+.im1{
+    margin-left: 23em;
+    padding: 2em;
+}
+.drop-menu{
+    padding-right: 20rem;
+    padding-left: 20rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: right;
+}
+.Goals{
+    padding: 10px 30px;
+    background-color: white;
+     
+    margin-top: 10em;
+    margin-bottom: 15px;
+    margin-left: 20em;
+    margin-right: 20em;
+    font-family: cursive;
+}
+.goalh{
+    text-transform: uppercase;
+    text-align: center;
+}
+.Skills{
+    padding: 10px 30px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 20em;
+    margin-right: 20em;
+    font-family: cursive;
+     
+    
+}
+.skillh{
+    text-transform: uppercase;
+    text-align: center;
+}
+.Academics{
+    padding: 10px 30px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 20em;
+    margin-right: 20em;
+    font-family: cursive;
+}
+.academh{
+    text-transform: uppercase;
+    text-align: center;
+}
+.bgimg1{
+    
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+.bgimg1 h2{
+    font-size: 3em;
+    
+    font-weight: 500;
+    font-style: unset;
+    text-decoration: none;
+} 
+header .logo{
+    font-size: 20px;
+    color: violet;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 2;
+    left: 2;
+}
+header ul{
+    display: flex;
+    position: relative;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    padding: 0.5px;
+    text-decoration: none;
+    font: large;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+.anim{
+    animation-name: hello;
+    animation-duration: 4s;
+}
+ 
+@keyframes hello {
+    80%{
+    letter-spacing: 5px;
+    }
+    100% {
+    background-size: 300% 300%;
+    }
+     
+    }
+    .mybtn{
+        position: fixed;
+        
+        bottom: 20px;
+        right: 30px;
+        width: 100px;
+        height: 100px;
+        z-index: 200;
+        border: none;
+        outline: none;
+         
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 100px;
+        font-size: 70px;
+        transition: all 2s ease;
+       }
+       .mybtn i{
+        padding-top: 5px;
+       }
+       
+.sm{
+    text-align: center;
+}
+       
+.bgimg{
+    padding: 4em;
+}       
+#a,#b,#c{
+    margin-top: 5em;
+    margin-bottom: 6em;
+    margin-left: 2em;
+    margin-right: 2em;
+}

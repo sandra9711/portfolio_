@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://kit.fontawesome.com/8993432a35.js" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/8993432a35.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/740c431368.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="image.png">
+        <link rel="stylesheet" href="style.css">
+         <title>Sandra</title>
+    </head>
+    <body>
+        <section class="bgimg1" id="hd">
+            <header>
+                <a href="#" class="logo"></a>
+                <div class="toggle"></div>
+                <ul>
+                    <li><a href="#abtid"><b>About Me</b> </a></li>
+                    <li><a href="#goalid"><b>Goals</b></a></li>
+                    <li><a href="#academid"><b>Academics</b></a></li> 
+                    <li><a href="#skillid"> <b>Skills</b></a></li>
+                    <li><a href="#smid"><b>Social Media Handles</b></a></li>
+                </ul>
+            </header>
+            
+            
+        </section>
+        <section class="bgimg">
+             
+            <div class="fh">
+                <h2 class="anim">Hello,</h2><h2>I'm</h2>
+                <h1><b>Sandra Mariyam Jacob</b></h1>
+                
+            </div>
+            
+        </section>
+        <section class="about" id="abtid">
+            <img src="profile.jpg" id="imge1" class="im1" alt="profile pic" width="150px">
+            <div class="abouth">
+                <h2>About Me</h2>
+            </div>
+             
+            <div class="abtcont">
+                <h3>I'm a Computer science student at Mar Athanasius College of Engineering Kothamangalam.<br>
+                   Interested in web development and machine learning.<br>Lives in Kerala.
+                   
+                </h3>
+                 
+            </div>
+        </section>
+         
+        <section class="Goals" id="goalid">
+            
+            <div class="goalh">
+                <h2>Goals</h2>
+            </div>
+            <div class="goalcont">
+                <p> 
+                    <br>Goals of an engineering student with no experience in the field and a background in programming!<br> I started working on it, mainly to develop something <br>that could be used by other people who had done similar tasks - although sometimes also for fun<br>  
+                    It worked out beautifully so far; rather than going around getting all kinds help from different parties at every stage. 
+                </p>
+                 
+            </div>
+        </section>
+        <section class="Academics" id="academid">
+            <div class="academh">
+                <h2>Academics</h2>
+            </div>
+            <div class="academcont">
+                <p> I'm currently doing my b B-Tech in computer science at Mar Athanasius College of Engineering Kothamangalam<br>
+                    Completed schooling at Sacred Hearts Higher Secondary School.<br>Did my higher secondary education at Mar Thoma Higher Secondary
+                    School ,Pathanamthitta.
+                </p>
+                 
+            </div>
+        </section>
+        <section class="Skills" id="skillid">
+            <div class="skillh">
+                <h2>Skills</h2>
+            </div>
+            <div class="skillcont">
+                <p>As a beginner in web development,I have some HTML and CSS skills.<br>
+                   I have also started learning machine learning concepts using python.<br>
+                   Interested in game development using Unity 3D engine.<br>
+                   Learned to use Augmented reality in gaming and some other platforms.<br>
+                   Such as aframe for AR in websites and different kind of AR filters using Spark AR.<br>
+                   <b>Programming languages</b><br><br>
+                   <b>Java:</b><progress value="20" max="100"></progress>
+                   <br>
+                   <b>Python:</b><progress value="50" max="100"></progress>
+                   <br>
+                   <b>C:</b><progress value="60" max="100"></progress>
+                   <br>
+                   <b>JavaScript;</b><progress value="20" max="100"></progress>
+                   <br>
+                </p>
+                 
+            </div>
+        </section>
+        <a href="#top">
+            <div id="myBtn" class="mybtn">
+                 <i class="fas fa-arrow-circle-up"></i>
+                  
+            </div>
+        </a>
+        <footer class="sm">
+            <section class="sm" id="smid">
+                <div class="smh">
+                    <h2>Connect @ </h2>
+                </div>
+                <a href="https://www.instagram.com/sandra_mariya_jacob/" id="a" ><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sandra-mariyam-jacob-2689641b2/" id="b"><i class="fab fa-linkedin"></i>  </a>   
+                <a href="https://github.com/sandra9711" id="c"><i class="fab fa-github"></i></a>
+            </section>
+        </footer>
+        <script type="text/javascript">
+          var dd=0;
+          function dropFunction(){
+              dd++;
+              if(dd%2==0){
+                document.getElementById("toggleButton").classList.remove("cross");
+                document.getElementById("drop-content").classList.remove("show-menu");
+                document.getElementById("drop-content").classList.add("retract-menu");
+              }else{
+                document.getElementById("toggleButton").classList.add("cross");
+                document.getElementById("drop-content").classList.add("show-menu");
+                document.getElementById("drop-content").classList.remove("retract-menu");
+              }
+              if(dd==2){
+                  dd=dd-2;
+              }
+          }
+          window.addEventListener('click',function(e){
+              if(!document.getElementById('toggleButton').contains(e.target)){
+                document.getElementById("toggleButton").classList.remove("cross");
+                document.getElementById("drop-content").classList.remove("show-menu");
+                document.getElementById("drop-content").classList.add("retract-menu");
+                dd=0;
+              }
+          }
+          window.addEventListener('scroll',function(){
+            var header=document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY>0);
+        });
+        mybutton = document.getElementById("myBtn"); 
+        window.onscroll = function(){scrollFunction()}; 
+        function scrollFunction(){
+            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+                mybutton.style.display = "block";
+            }else{
+                mybutton.style.display = "none";
+            }
+        }
+        </script>
+    </body>
+</html>
